@@ -1,1 +1,8 @@
 https://colorpalettes.net/color-palette-3730/
+
+Dependencies
+******************************
+npm i react-router-dom
+npm install --save styled-components
+npm install react-icons --save
+npm install hamburger-react
