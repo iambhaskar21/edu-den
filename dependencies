@@ -1,1 +1,5 @@
 https://colorpalettes.net/color-palette-3730/
+
+npm install @mui/icons-material @emotion/react @emotion/styled
+
+npm install sass

@@ -1,1 +1,10 @@
 @import "../../global.scss";
+
+.home{
+    display: flex;
+
+    .homeContainer{
+        background-color: rgb(255, 255, 255);
+        flex: 6;
+    }
+}
