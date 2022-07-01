@@ -1,7 +1,0 @@
-.active{
-    text-decoration: underline;
-    border-bottom: 1px solid white;
-    transition: border-width 1s linear;
-   
-    z-index:1
-}

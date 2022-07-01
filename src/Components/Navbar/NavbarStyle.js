@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import {BrowserRouter as Router, NavLink } from 'react-router-dom'
-import {FaBars} from 'react-icons/fa'
+import {FaBars, FaTimes} from 'react-icons/fa'
 
 
 
@@ -39,20 +39,63 @@ export const NavbarElements = styled.div`
 
 `
 export const NavBarLink= styled(NavLink)`
-    color: white;
+    color: #F8F0E3;
+    font-size: large;
+    outline: none;
     text-decoration: none;
     cursor: pointer;
     @media (max-width: 768px) {
     display:none;
+    
   }
+    &:hover{
+        color:white;
+    }
     
 `
 export const ClickIcon=styled(FaBars)`
     font-size: 2em;
     color: white;
-    padding-right:1em;
     @media (min-width:768px) {
         display: none;
+    }
+    display: ${(props)=>props.toggleStatus?'grid':'block'};
+   
+`
+
+
+export const SideBarMain =styled.div`
+    background: #5ba56e;
+    height:30vh;
+    width:100vw;
+    padding: 2em;
+    position:relative;
+    @media (min-width:768px) {
+        display: none;
+    }
+    align-items: center;
+    justify-content: center;
+    display: ${(props)=>props.toggleStatus?'grid':'none'};
+
+`
+
+export const SideBarElements = styled.div`
+    display: grid;
+    row-gap: 1em;
+    
+`
+export const SideBarLink = styled(NavLink)`
+    color: #F8F0E3;
+    text-decoration: none;
+    cursor: pointer;
+    grid-area: auto;
+    display: flex;
+    margin: 1em;
+    font-size: large;
+    justify-content: center;
+    width: 5em;
+    &:hover{
+        color: white;
     }
    
 `
