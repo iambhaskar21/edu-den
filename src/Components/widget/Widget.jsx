@@ -17,7 +17,7 @@ const Widget = ({ type }) => {
         case "teachers":
             data = {
                 title: "Teachers",
-                isMoney: true,
+                isMoney: false,
                 link: "See all teachers",
                 icon: <PersonOutlineIcon className="icon" 
                 style={{backgroundColor: "rgb(255, 218, 150)"}}/>,
@@ -27,7 +27,7 @@ const Widget = ({ type }) => {
             data = {
                 title: "Syllabus",
                 isMoney: false,
-                link: "See all syllabus",
+                link: "See the syllabus",
                 icon: <LibraryBooksIcon className="icon" style={{backgroundColor: "#c7c6fe"}}/>,
             };
             break;

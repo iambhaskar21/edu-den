@@ -1,0 +1,21 @@
+@import "../../global.scss";
+.featured {
+  flex: 1;
+  padding: 10px;
+  -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+
+  p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: $greycolor;
+    text-align: center;
+  }
+
+  .form-check {
+    justify-content: center;
+    align-items: center;
+    
+  }
+}
